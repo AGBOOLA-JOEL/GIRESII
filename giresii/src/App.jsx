@@ -4,10 +4,12 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
+import "./App.scss";
+
 import Home from "./Home";
-import Login from "./Login";
+import Login from "./Pages/Auth/Login";
 import Root from "./Root";
-import "./Components/Styles/App.css"
 
 function App() {
   const router = createBrowserRouter(

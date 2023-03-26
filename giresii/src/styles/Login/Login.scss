@@ -1,0 +1,41 @@
+$login-background: red;
+$login-width: 100%;
+$login-height: 100vh;
+.login {
+  //   background-color: $loginbackground;
+
+  height: $login-height;
+  width: $login-width;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+}
+.login-details {
+  height: $login-height;
+  width: 60%;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-fields{
+    background-color: #55b6fb58;
+    height: 100%;
+    width:100%;
+    
+}
+.login-image {
+  background-image: url("../../Assets/Images/test3.jpg");
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+}
+.login-image-cover {
+  width: 100%;
+  height: 100%;
+  background-color: #55b6fb98;
+}
