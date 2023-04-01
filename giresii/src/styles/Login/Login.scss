@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 $login-background: white;
 $login-width: 100%;
 $login-height: 100%;
@@ -11,18 +13,18 @@ $login-height: 100%;
   flex-direction: row;
   // padding: 0 0;
   // margin: 0 0;
-
+  font-family: Montserrat;
   padding-bottom: 0px;
 }
 
 .login-carousel {
-  width: 65%;
+  width: 63%;
   background-color: gray;
   position: relative;
 }
 .login-carousel-details {
-  // width: 100%;
-  // height: 100%;
+  width: 100%;
+  height: 100%;
   background-color: red;
 }
 
@@ -30,6 +32,7 @@ $login-height: 100%;
   width: 100%;
   height: 100%;
   background-size: cover;
+  // position: relative;
 }
 
 .login-carousel-info {
@@ -40,34 +43,93 @@ $login-height: 100%;
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-around;
 }
 
 .login-carousel-info-logo {
   width: 200px;
-  height: 30%;
+  height: 33%;
   padding-left: 50px;
   padding-top: 55px;
+  margin-bottom: -70px;
 }
 
 .login-carousel-info-comment {
   padding-left: 50px;
-  width: 80%;
-  height: 30%;
-  margin-top: -120px;
+  width: 90%;
+  height: 33%;
+  // margin-top: -50px;
 }
 .login-carousel-info-comment p {
   color: white;
   font-weight: 500;
   font-size: 40px;
-  text-align: left;
+  // text-align: right;
 }
 
 .login-carousel-info-agency {
   height: 30%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  margin-top: 40px;
+  justify-content: space-between;
+  // padding-bottom: 20px;
+}
+
+.login-agency-desc {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 10px;
+  background-color: black;
+}
+
+.login-agency-desc :nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: -10px;
+}
+
+.login-agency-desc :nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: -8px;
+}
+
+.login-agency-desc :nth-child(3) {
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .login-credentials {
-  width: 35%;
+  width: 37%;
   background-color: white;
+}
+
+.login-carousel-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+   width: 200px;
+  padding-right: 40px;
+  margin-top: 100px;
+}
+
+ 
+
+.login-carousel-star {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }

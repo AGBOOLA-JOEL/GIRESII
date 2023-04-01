@@ -1,16 +1,18 @@
-$base-width: 100%;
-$base-height: 500px;
-$base-background: rgb(39, 138, 191);
+// $base-width: 100%;
+// $base-height: ;
+// $base-background: rgb(39, 138, 191);
 $base-margin: 0px;
 $base-padding: 0px;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@300&display=swap");
+
 body {
-  // max-width: $base-width;
-  // height: $base-height;
-  background-color: $base-background;
+  // width: $base-width;
+  // max-height: $base-height;
+  // font-family: Inter;
+  // background-color: $base-background;
   margin: $base-margin;
   padding: $base-padding;
   top: 0px;
   left: 0px;
-  
 }
