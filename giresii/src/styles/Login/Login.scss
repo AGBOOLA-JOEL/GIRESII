@@ -3,6 +3,7 @@
 $login-background: white;
 $login-width: 100%;
 $login-height: 100vh;
+$credentials-width:420px;
 .login-container {
   background-color: $login-background;
   height: $login-height;
@@ -142,7 +143,7 @@ $login-height: 100vh;
   flex-direction: column;
   // margin-right: auto;
   // padding-left: 70px;
-  width:420px;
+  width:$credentials-width;
 }
 .login-credentials-header :nth-child(1) {
   font-weight: 700;
@@ -161,7 +162,7 @@ $login-height: 100vh;
   flex-direction: column;
   gap: 30px;
 
-  width: 420px;
+  width: $credentials-width;
   margin-bottom: 5px;
 }
 .login-credentials-field input {
@@ -186,7 +187,7 @@ $login-height: 100vh;
   align-items: center;
   color: white;
   font-weight: 500;
-  width: 420px;
+  width: $credentials-width;
   font-size: 20px;
 }
 
@@ -201,7 +202,7 @@ $login-height: 100vh;
   align-items: center;
   color: black;
   font-weight: 550;
-  width: 420px;
+  width: $credentials-width;
   font-size: 20px;
   gap: 7px;
   margin-top: 12px;
@@ -211,7 +212,7 @@ $login-height: 100vh;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 420px;
+  width: $credentials-width;
   font-size: 17px;
   margin-top: 10px;
 }
