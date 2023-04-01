@@ -1,15 +1,16 @@
 $base-width: 100%;
-$base-height: 100%;
-$base-background: white;
-$base-margin: 0;
-$base-padding: 0;
+$base-height: 500px;
+$base-background: rgb(39, 138, 191);
+$base-margin: 0px;
+$base-padding: 0px;
 
 body {
-  width: $base-width;
-  height: $base-height;
+  // max-width: $base-width;
+  // height: $base-height;
   background-color: $base-background;
   margin: $base-margin;
   padding: $base-padding;
   top: 0px;
   left: 0px;
+  
 }

@@ -1,41 +1,72 @@
-$login-background: red;
+$login-background: white;
 $login-width: 100%;
-$login-height: 100vh;
-.login {
-  //   background-color: $loginbackground;
-
+$login-height: 100%;
+.login-container {
+  background-color: $login-background;
   height: $login-height;
   width: $login-width;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
-}
-.login-details {
-  height: $login-height;
-  width: 65%;
-  color: white;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  // padding: 0 0;
+  // margin: 0 0;
+
+  padding-bottom: 0px;
 }
 
-.login-fields{
-    background-color: #55b6fb58;
-    height: 100%;
-    width:100%;
-    
+.login-carousel {
+  width: 65%;
+  background-color: gray;
+  position: relative;
 }
-.login-image {
-  background-image: url("../../Assets/Images/test3.jpg");
-  width: 35%;
-  background-size: cover;
-  background-position: center;
+.login-carousel-details {
+  // width: 100%;
+  // height: 100%;
+  background-color: red;
 }
-.login-image-cover {
+
+.login-carousel-details img {
   width: 100%;
   height: 100%;
-  background-color: #55b6fb98;
+  background-size: cover;
+}
+
+.login-carousel-info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.228);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-carousel-info-logo {
+  width: 200px;
+  height: 50px;
+  padding-left: 50px;
+  padding-top: 55px;
+}
+
+.login-carousel-info-comment {
+  padding-left: 50px;
+  width: 80%;
+  margin-top: -120px;
+}
+.login-carousel-info-comment p {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: left;
+}
+
+.login-carousel-info-agency{
+
+}
+
+.login-credentials {
+  width: 35%;
+  background-color: white;
 }
