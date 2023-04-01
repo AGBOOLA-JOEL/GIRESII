@@ -1,7 +1,7 @@
 export const loginData = [
   {
     id: 1,
-    name: "Olivia Ryer",
+    name: "Agboola Grace",
     title: "Chief Technical Writer",
     agency: "Meta",
     agencyType: "Paper Press Agency",

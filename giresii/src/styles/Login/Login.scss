@@ -2,7 +2,7 @@
 
 $login-background: white;
 $login-width: 100%;
-$login-height: 100%;
+$login-height: 100vh;
 .login-container {
   background-color: $login-background;
   height: $login-height;
@@ -32,6 +32,7 @@ $login-height: 100%;
   width: 100%;
   height: 100%;
   background-size: cover;
+  object-fit: cover;
   // position: relative;
 }
 
@@ -106,22 +107,15 @@ $login-height: 100%;
   font-weight: 500;
 }
 
-.login-credentials {
-  width: 37%;
-  background-color: white;
-}
-
 .login-carousel-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-   width: 200px;
+  width: 200px;
   padding-right: 40px;
   margin-top: 100px;
 }
-
- 
 
 .login-carousel-star {
   height: 60px;
@@ -131,5 +125,97 @@ $login-height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+}
+.login-credentials {
+  width: 37%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding-left: 70px;
+  // padding-right: 70px;
+}
+.login-credentials-header {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  // margin-right: auto;
+  // padding-left: 70px;
+  width:420px;
+}
+.login-credentials-header :nth-child(1) {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+.login-credentials-header :nth-child(2) {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.login-credentials-field {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  width: 420px;
+  margin-bottom: 5px;
+}
+.login-credentials-field input {
+  height: 30px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+.login-credentials-btn {
+  margin-top: 30px;
+}
+.login-create {
+  height: 50px;
+  border-radius: 4px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  width: 420px;
+  font-size: 20px;
+}
+
+.login-google {
+  height: 50px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 550;
+  width: 420px;
+  font-size: 20px;
+  gap: 7px;
+  margin-top: 12px;
+}
+.login-direct {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.login-direct span {
+  font-weight: 600;
 }
