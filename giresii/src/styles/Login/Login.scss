@@ -3,7 +3,7 @@
 $login-background: white;
 $login-width: 100%;
 $login-height: 100vh;
-$credentials-width:420px;
+$credentials-width: 100%;
 .login-container {
   background-color: $login-background;
   height: $login-height;
@@ -19,7 +19,7 @@ $credentials-width:420px;
 }
 
 .login-carousel {
-  width: 63%;
+  width: 65%;
   background-color: gray;
   position: relative;
 }
@@ -128,7 +128,7 @@ $credentials-width:420px;
   align-items: center;
 }
 .login-credentials {
-  width: 37%;
+  width: 35%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -137,13 +137,18 @@ $credentials-width:420px;
   // padding-left: 70px;
   // padding-right: 70px;
 }
+
+.login-black-logo {
+  
+  display: none;
+}
 .login-credentials-header {
   color: black;
   display: flex;
   flex-direction: column;
   // margin-right: auto;
   // padding-left: 70px;
-  width:$credentials-width;
+  width: $credentials-width;
 }
 .login-credentials-header :nth-child(1) {
   font-weight: 700;
@@ -170,7 +175,8 @@ $credentials-width:420px;
   font-size: 17px;
   border: none;
   outline: none;
-  background-color: white;
+  // background-color: white;
+  background: none;
   border-bottom: 1px solid gray;
 }
 
@@ -219,4 +225,53 @@ $credentials-width:420px;
 
 .login-direct span {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 425px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color:#1b3c54 ;
+  }
+
+  .login-carousel {
+    display: none;
+  }
+  .login-credentials {
+    width: 100%;
+    // background-color:#1b3c54 ;
+  }
+
+  .login-credentials-container {
+    width: 80%;
+    margin-top: -120px;
+  }
+
+  .login-black-logo {
+    height: 150px;
+    display: block;
+  }
+  .login-direct {
+    margin-top: 15px;
+  }
+  .login-credentials-header :nth-child(1) {
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: -10px;
+  }
+
+  .login-credentials-header :nth-child(2) {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .login-google {
+    font-size: 18px;
+  }
+  .login-create {
+    font-size: 18px;
+  }
 }
