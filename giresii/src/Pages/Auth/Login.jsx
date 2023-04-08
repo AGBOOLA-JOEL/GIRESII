@@ -64,25 +64,37 @@ const Login = () => {
             <BlackLogo />
           </div>
           <div className="login-credentials-header">
-            <p>Create an account</p>
-            <p>Let's get started with your blog credentials</p>
+            <p>join our network</p>
+            <p>
+             We'd love to have you! join our 100% remote network writers & freelancers
+            </p>
+          </div>
+
+          <div className="login-google">
+            <span>
+              <FcGoogle size={30} />
+            </span>
+            <p>Sign up with Google</p>
+          </div>
+
+          <div className="login-span">
+            <span></span>
+            <p>OR</p>
+            <span></span>
           </div>
 
           <div className="login-credentials-field">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <label htmlFor="Name">Name*</label>
+            <input type="text" placeholder="Enter your name" />
+            <label htmlFor="">Email*</label>
+            <input type="text" placeholder="Enter your email" />
+            <label htmlFor="">Password*</label>
+            <input type="password" placeholder="Create a password" />
           </div>
 
           <div className="login-credentials-btn">
             <div className="login-create">
-              <p>Create account</p>{" "}
-            </div>
-            <div className="login-google">
-              <span>
-                <FcGoogle size={30} />
-              </span>
-              <p>Sign up with Google</p>
+              <p>Sign up</p>{" "}
             </div>
 
             <div className="login-direct">
