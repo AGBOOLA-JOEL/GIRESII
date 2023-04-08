@@ -66,7 +66,7 @@ const Login = () => {
           <div className="login-credentials-header">
             <p>join our network</p>
             <p>
-              We'd love to have you! join our 100% remote network writers &
+              We'd love to have you! join our 100% remote network of writers &
               freelancers
             </p>
           </div>
