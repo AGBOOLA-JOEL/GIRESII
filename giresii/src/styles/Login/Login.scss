@@ -12,10 +12,6 @@ $credentials-width: 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
-  // justify-content: center;
-  // align-items: center;
-  // padding: 0 0;
-  // margin: 0 0;
   font-family: Montserrat;
   padding-bottom: 0px;
 }
@@ -35,7 +31,6 @@ $credentials-width: 100%;
   height: 100%;
   background-size: cover;
   object-fit: cover;
-  // position: relative;
 }
 
 .login-carousel-info {
@@ -46,7 +41,6 @@ $credentials-width: 100%;
   top: 0;
   display: flex;
   flex-direction: column;
-  // justify-content: space-around;
 }
 
 .login-carousel-info-logo {
@@ -61,13 +55,11 @@ $credentials-width: 100%;
   padding-left: 50px;
   width: 90%;
   height: 33%;
-  // margin-top: -50px;
 }
 .login-carousel-info-comment p {
   color: white;
   font-weight: 500;
   font-size: 40px;
-  // text-align: right;
 }
 
 .login-carousel-info-agency {
@@ -77,7 +69,6 @@ $credentials-width: 100%;
   padding-left: 50px;
   margin-top: 40px;
   justify-content: space-between;
-  // padding-bottom: 20px;
 }
 
 .login-agency-desc {
@@ -147,8 +138,6 @@ $credentials-width: 100%;
   color: black;
   display: flex;
   flex-direction: column;
-  // margin-right: auto;
-  // padding-left: 70px;
   width: $credentials-width;
 }
 .login-credentials-header :nth-child(1) {
@@ -179,10 +168,8 @@ $credentials-width: 100%;
 .login-credentials-field input {
   height: 45px;
   font-size: 17px;
-  // border: none;
   margin-bottom: -5px;
   outline: none;
-  // background-color: white;
   border-radius: 7px;
   background: none;
   padding-left: 15px;
@@ -230,11 +217,9 @@ $credentials-width: 100%;
   justify-content: center;
   align-items: center;
   width: $credentials-width;
-  // margin-bottom: 5px;
 }
 
 .login-span span {
-  // height: px;
   width: 45%;
   border: 1px solid rgba(206, 206, 206, 0.564);
 }
@@ -267,11 +252,8 @@ $credentials-width: 100%;
   .login-container {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
-    // background-color:#1b3c54 ;
   }
 
   .login-carousel {
@@ -283,7 +265,6 @@ $credentials-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background-color:#1b3c54 ;
   }
 
   .login-credentials-container {
@@ -291,10 +272,6 @@ $credentials-width: 100%;
     margin-top: -120px;
   }
 
-  // .login-black-logo {
-  //   height: 150px;
-  //   display: block;
-  // }
   .login-direct {
     margin-top: 15px;
   }
