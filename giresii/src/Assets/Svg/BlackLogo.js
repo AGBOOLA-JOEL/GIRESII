@@ -5,7 +5,7 @@ const BlackLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 455 136"
       className="iconLeft"
-      style={{width:130,height:130}}
+      style={{ width: 115, height: 115 }}
     >
       <g
         data-v-423bf9ae=""

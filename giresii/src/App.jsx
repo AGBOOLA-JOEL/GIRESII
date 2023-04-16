@@ -1,3 +1,4 @@
+import SignUp from "Pages/Auth/SignUp";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -8,7 +9,6 @@ import {
 import "./App.scss";
 
 import Home from "./Home";
-import Login from "./Pages/Auth/Login";
 import Root from "./Root";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signUp" element={<SignUp/>} />
       </Route>
     )
   );
