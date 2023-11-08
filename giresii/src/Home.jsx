@@ -1,11 +1,5 @@
-import LoginBlock from "./Assets/Svg/LoginBlock";
-
 const Home = () => {
-  return (
-    <div>
-      <LoginBlock />
-    </div>
-  );
+  return <div>homepage</div>;
 };
 
 export default Home;

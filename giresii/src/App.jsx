@@ -1,4 +1,4 @@
-import SignUp from "Pages/Auth/SignUp";
+import Register from "Pages/Auth/Register";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import "./App.scss";
+import "./styles/global.css";
 
 import Home from "./Home";
 import Root from "./Root";
@@ -16,7 +16,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
-        <Route path="/signUp" element={<SignUp/>} />
+        <Route path="/register" element={<Register />} />
       </Route>
     )
   );

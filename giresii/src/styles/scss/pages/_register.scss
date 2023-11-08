@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 $login-background: white;
 $login-width: 100%;
 $login-height: 100vh;
 $credentials-width: 100%;
-.sign-container {
+.register-container {
   background-color: $login-background;
   height: $login-height;
   width: $login-width;
@@ -16,24 +14,24 @@ $credentials-width: 100%;
   padding-bottom: 0px;
 }
 
-.sign-carousel {
+.register-carousel {
   width: 70%;
   background-color: gray;
   position: relative;
 }
-.sign-carousel-details {
+.register-carousel-details {
   width: 100%;
   height: 100%;
 }
 
-.sign-carousel-details img {
+.register-carousel-details img {
   width: 100%;
   height: 100%;
   background-size: cover;
   object-fit: cover;
 }
 
-.sign-carousel-info {
+.register-carousel-info {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.228);
   width: 100%;
@@ -43,7 +41,7 @@ $credentials-width: 100%;
   flex-direction: column;
 }
 
-.sign-carousel-info-logo {
+.register-carousel-info-logo {
   width: 200px;
   height: 33%;
   padding-left: 50px;
@@ -51,18 +49,18 @@ $credentials-width: 100%;
   margin-bottom: -70px;
 }
 
-.sign-carousel-info-comment {
+.register-carousel-info-comment {
   padding-left: 50px;
   width: 90%;
   height: 33%;
 }
-.sign-carousel-info-comment p {
+.register-carousel-info-comment p {
   color: white;
   font-weight: 500;
   font-size: 40px;
 }
 
-.sign-carousel-info-agency {
+.register-carousel-info-agency {
   height: 30%;
   display: flex;
   flex-direction: row;
@@ -71,36 +69,42 @@ $credentials-width: 100%;
   justify-content: space-between;
 }
 
-.sign-agency-desc {
+.register-agency-desc {
   display: flex;
   flex-direction: column;
   color: white;
   height: 100%;
   padding-right: 20px;
   padding-left: 10px;
-  background-color: black;
+
+  /* From https://css.glass */
+  background: rgba(24, 24, 25, 0.48);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
-.sign-agency-desc :nth-child(1) {
+.register-agency-desc :nth-child(1) {
   font-size: 30px;
   font-weight: 600;
   margin-top: 70px;
   margin-bottom: -10px;
 }
 
-.sign-agency-desc :nth-child(2) {
+.register-agency-desc :nth-child(2) {
   font-size: 20px;
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: -8px;
 }
 
-.sign-agency-desc :nth-child(3) {
+.register-agency-desc :nth-child(3) {
   font-size: 17px;
   font-weight: 500;
 }
 
-.sign-carousel-btn {
+.register-carousel-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -110,7 +114,7 @@ $credentials-width: 100%;
   margin-top: 100px;
 }
 
-.sign-carousel-star {
+.register-carousel-star {
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -119,7 +123,7 @@ $credentials-width: 100%;
   justify-content: center;
   align-items: center;
 }
-.sign-credentials {
+.register-credentials {
   width: 30%;
   background-color: white;
   display: flex;
@@ -130,29 +134,29 @@ $credentials-width: 100%;
   margin-right: 70px;
 }
 
-.sign-black-logo {
+.register-black-logo {
   height: 70px;
   margin-bottom: 10px;
 }
-.sign-credentials-header {
+.register-credentials-header {
   color: black;
   display: flex;
   flex-direction: column;
   width: $credentials-width;
 }
-.sign-credentials-header :nth-child(1) {
+.register-credentials-header :nth-child(1) {
   font-weight: 700;
   font-size: 25px;
   margin-bottom: -10px;
 }
 
-.sign-credentials-header :nth-child(2) {
+.register-credentials-header :nth-child(2) {
   font-weight: 500;
   font-size: 17px;
   margin-bottom: 40px;
 }
 
-.sign-credentials-field {
+.register-credentials-field {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -160,12 +164,12 @@ $credentials-width: 100%;
   width: $credentials-width;
   margin-bottom: 5px;
 }
-.sign-credentials-field label {
+.register-credentials-field label {
   font-size: 17px;
   margin-bottom: -25px;
   font-weight: 600;
 }
-.sign-credentials-field input {
+.register-credentials-field input {
   height: 45px;
   font-size: 17px;
   margin-bottom: -5px;
@@ -176,10 +180,10 @@ $credentials-width: 100%;
   border: 1px solid rgba(206, 206, 206, 0.906);
 }
 
-.sign-credentials-btn {
+.register-credentials-btn {
   margin-top: 30px;
 }
-.sign-create {
+.register-create {
   height: 50px;
   border-radius: 7px;
   background-color: black;
@@ -192,9 +196,10 @@ $credentials-width: 100%;
   width: $credentials-width;
   font-size: 18px;
   margin-top: 35px;
+  cursor: pointer;
 }
 
-.sign-google {
+.register-google {
   height: 45px;
   border-radius: 7px;
   background-color: white;
@@ -209,9 +214,10 @@ $credentials-width: 100%;
   font-size: 18px;
   gap: 7px;
   margin-top: -20px;
+  cursor: pointer;
 }
 
-.sign-span {
+.register-span {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -219,11 +225,11 @@ $credentials-width: 100%;
   width: $credentials-width;
 }
 
-.sign-span span {
+.register-span span {
   width: 45%;
   border-bottom: 2px solid rgba(206, 206, 206, 0.564);
 }
-.sign-span p {
+.register-span p {
   width: 10%;
   display: flex;
   flex-direction: row;
@@ -233,7 +239,7 @@ $credentials-width: 100%;
   font-weight: 600;
   color: rgba(90, 90, 90, 0.906);
 }
-.sign-direct {
+.register-direct {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -243,23 +249,23 @@ $credentials-width: 100%;
   margin-top: 10px;
 }
 
-.sign-direct span {
+.register-direct span {
   font-weight: 600;
   text-decoration: underline;
 }
 
 @media only screen and (max-width: 425px) {
-  .sign-container {
+  .register-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .sign-carousel {
+  .register-carousel {
     display: none;
   }
-  .sign-credentials {
+  .register-credentials {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -267,33 +273,33 @@ $credentials-width: 100%;
     align-items: center;
   }
 
-  .sign-credentials-container {
+  .register-credentials-container {
     width: 80%;
     margin-top: -120px;
   }
 
-  .sign-direct {
+  .register-direct {
     margin-top: 15px;
   }
-  .sign-credentials-header :nth-child(1) {
+  .register-credentials-header :nth-child(1) {
     font-weight: 700;
     font-size: 27px;
     margin-bottom: -10px;
   }
 
-  .sign-credentials-header :nth-child(2) {
+  .register-credentials-header :nth-child(2) {
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 40px;
   }
 
-  .sign-google {
+  .register-google {
     font-size: 18px;
   }
-  .sign-create {
+  .register-create {
     font-size: 18px;
   }
-  .sign-credentials {
+  .register-credentials {
     margin-bottom: -90px;
   }
 }

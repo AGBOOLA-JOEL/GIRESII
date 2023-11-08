@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+}
+.app .register-container {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  font-family: Montserrat;
+  padding-bottom: 0px;
+}
+.app .register-carousel {
+  width: 70%;
+  background-color: gray;
+  position: relative;
+}
+.app .register-carousel-details {
+  width: 100%;
+  height: 100%;
+}
+.app .register-carousel-details img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .register-carousel-info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.228);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.app .register-carousel-info-logo {
+  width: 200px;
+  height: 33%;
+  padding-left: 50px;
+  padding-top: 55px;
+  margin-bottom: -70px;
+}
+.app .register-carousel-info-comment {
+  padding-left: 50px;
+  width: 90%;
+  height: 33%;
+}
+.app .register-carousel-info-comment p {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+}
+.app .register-carousel-info-agency {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.app .register-agency-desc {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 10px;
+  /* From https://css.glass */
+  background: rgba(24, 24, 25, 0.48);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.app .register-agency-desc :nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: -10px;
+}
+.app .register-agency-desc :nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: -8px;
+}
+.app .register-agency-desc :nth-child(3) {
+  font-size: 17px;
+  font-weight: 500;
+}
+.app .register-carousel-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding-right: 40px;
+  margin-top: 100px;
+}
+.app .register-carousel-star {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .register-credentials {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.app .register-black-logo {
+  height: 70px;
+  margin-bottom: 10px;
+}
+.app .register-credentials-header {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.app .register-credentials-header :nth-child(1) {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: -10px;
+}
+.app .register-credentials-header :nth-child(2) {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+.app .register-credentials-field {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.app .register-credentials-field label {
+  font-size: 17px;
+  margin-bottom: -25px;
+  font-weight: 600;
+}
+.app .register-credentials-field input {
+  height: 45px;
+  font-size: 17px;
+  margin-bottom: -5px;
+  outline: none;
+  border-radius: 7px;
+  background: none;
+  padding-left: 15px;
+  border: 1px solid rgba(206, 206, 206, 0.906);
+}
+.app .register-credentials-btn {
+  margin-top: 30px;
+}
+.app .register-create {
+  height: 50px;
+  border-radius: 7px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.app .register-google {
+  height: 45px;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid rgba(206, 206, 206, 0.906);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 550;
+  width: 100%;
+  font-size: 18px;
+  gap: 7px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.app .register-span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.app .register-span span {
+  width: 45%;
+  border-bottom: 2px solid rgba(206, 206, 206, 0.564);
+}
+.app .register-span p {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(90, 90, 90, 0.906);
+}
+.app .register-direct {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.app .register-direct span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 425px) {
+  .app .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .app .register-carousel {
+    display: none;
+  }
+  .app .register-credentials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .app .register-credentials-container {
+    width: 80%;
+    margin-top: -120px;
+  }
+  .app .register-direct {
+    margin-top: 15px;
+  }
+  .app .register-credentials-header :nth-child(1) {
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: -10px;
+  }
+  .app .register-credentials-header :nth-child(2) {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .app .register-google {
+    font-size: 18px;
+  }
+  .app .register-create {
+    font-size: 18px;
+  }
+  .app .register-credentials {
+    margin-bottom: -90px;
+  }
+}/*# sourceMappingURL=global.css.map */

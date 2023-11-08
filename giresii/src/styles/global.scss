@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@300&display=swap");
+
+@import "./scss/scssComponents/variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  overflow-x: hidden;
+ 
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  // components
+  //   @import "./scss/components/navbar";
+  //   @import "./scss/components/auth";
+  //   @import "./scss/components/generator";
+
+  // pages
+  //   @import "./scss/pages/home";
+  @import "./scss/pages/register";
+  //   @import "./scss/pages/generate-password";
+}
